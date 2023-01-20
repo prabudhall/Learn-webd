@@ -141,9 +141,9 @@ const people_array = [
 // }
 // console.log(found);
 
-console.log(col.find({name: "Apple"}));
+// console.log(col.find({name: "Apple"}));
 
-// to update // didn't follow schema
+// to update // didn't follow schema rules
 // peapcol.updateOne({name: "Name1"}, {favfruit: col.findOne({name: "Apple"})}, function(err) {
 //   if (err) {
 //     console.log("Error : ", err);
