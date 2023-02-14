@@ -17,7 +17,7 @@ async function run() {
     // Establish and verify connection
     await client.db(dbName);
     console.log("Connected successfully to server");
-    // console.log(client.db().admin().listDatabases());
+    console.log(await client.db().admin().listDatabases());
   } finally {
 
       // deciding the name of collection where the value is to be inserted
@@ -42,7 +42,7 @@ async function run() {
 
       // for finding
       // const findResult = await client.db("varame").collection("tbname").find({}).toArray();
-      const findResult = await collection.find({}).toArray();
+      const findResult = await collection.find().toArray();
       console.log('Found documents =>', findResult);
 
       // Ensures that the client will close when you finish/error

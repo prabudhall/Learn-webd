@@ -11,6 +11,7 @@ console.log($("h1").css("font-size"));
 setTimeout(function(){
   console.log("timeout");
   $("h1").text("Hello");
+  console.log($("h1").text());
   // adding css class to tags
   $("h1").addClass("big-title margin-50");
   $("button").html("<em>Don't Click</em>");
@@ -20,6 +21,7 @@ setTimeout(function(){
 }, 3000);
 
 console.log($("h1").attr("class"));
+// console.log($("a").attributes);
 $("a").attr("href", "yahoo.com");
 
 //eventListener

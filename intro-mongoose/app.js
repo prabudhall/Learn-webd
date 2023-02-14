@@ -134,6 +134,7 @@ const people_array = [
 //       console.log(er);
 //     }
 //     else {
+//       console.log(doc);
 //       fdoc = doc;
 //     }
 //   });
